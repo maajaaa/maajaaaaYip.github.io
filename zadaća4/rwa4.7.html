@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8" />
+    
+</head>
+<body>
+    <script type="text/javascript">
+        var Funkcija = function(x) {
+            if (typeof x === 'number') {
+                return x * x;
+            } else {
+                return 'Obavijest o pogrešci: Nije proslijeđen broj';
+            }
+        };
+
+        var rezultat1 =Funkcija(11);
+        console.log('Rezultat 1:', rezultat1);
+        var rezultat2 = Funkcija("nebroj");
+        console.log('Rezultat 2:', rezultat2);
+    </script>
+</body>
+</html>

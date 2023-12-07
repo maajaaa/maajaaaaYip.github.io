@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8" />
+    <title>polje</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var polje= new Array(1,2,3,4,7,8,5,6,9,55,12,4,85);
+        console.log('a. Dužina ovoga polja:',polje.length);
+        var najveciPremaNajmanjem = polje.slice().sort(function(a,b) {return b-a});
+        console.log('b. Sortirano:',najveciPremaNajmanjem);
+        var najmanjiPremaNajveci = polje.slice().sort(function(a,b){return a-b;});
+        console.log('c. Sortirano:', najmanjiPremaNajveci);
+        najveciPremaNajmanjem.pop();
+		console.log('d. Sortirano bez zadnjeg člana:', najmanjiPremaNajveci);
+        najmanjiPremaNajveci.push(19,22);
+		console.log('e. Sortirano sa dodatnim članovima:', najmanjiPremaNajveci);
+        var polje2 = ["Banana", "Orange", "Apple", "Mango"];
+        var polje_final= najmanjiPremaNajveci.concat(polje2);
+		console.log('f. Polje:', polje_final);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Savršeni brojevi</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function savrsenBroj(broj) {
+            var sum = 0;
+            for (var i = 1; i <= broj / 2; i++) {
+                if (broj % i === 0) {
+                    sum += i;
+                }
+            }
+            return sum === broj;
+        }
+
+        function SavrseniBrojeve(doBroja) {
+            for (var i = 1; i <= doBroja; i++) {
+                if (savrsenBroj(i)) {
+                    console.log(i + ' je savršen broj.');
+                }
+            }
+        }
+
+        SavrseniBrojeve(100);
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Objekt</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var person1 = {
+            firstName: "Pero",
+            lastName: "Perić",
+            age: 40,
+            eyeColor: "green"
+        };
+        var person2 = {
+            firstName: "Ivan",
+            lastName: "Ivić",
+            age: 28,
+            eyeColor: "gray"
+        };
+        var person3 = {
+            firstName: "Ana",
+            lastName: "Anić",
+            age: 35,
+            eyeColor: "red"
+        };
+        for (var key in person1) {
+            console.log(`Index: ${key}, Vrijednost: ${person1[key]}`);
+        }
+
+        console.log('---');
+
+        for (var key in person2) {
+            console.log(`Index: ${key}, Vrijednost: ${person2[key]}`);
+        }
+
+        console.log('---');
+
+        for (var key in person3) {
+            console.log(`Index: ${key}, Vrijednost: ${person3[key]}`);
+        }
+    </script>
+</body>
+</html>

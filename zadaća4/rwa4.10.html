@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Brojevi</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function RandomBrojevi(broj1, broj2) {
+            for (var i = 0; i < 5; i++) {
+                var rendomBroj = Math.floor(Math.random() * (broj2 - broj1 + 1)) + broj1;
+                console.log(rendomBroj);
+            }
+        }
+
+        RandomBrojevi(1, 10);
+    </script>
+</body>
+</html>
